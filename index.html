@@ -66,6 +66,29 @@
     .section-intro{color:var(--muted);max-width:700px;margin-bottom:42px}
     .about{display:grid;grid-template-columns:1fr 1fr;gap:50px}
     .about p{color:#c7ccd2;margin-bottom:16px}
+    .about h3 {
+  color: var(--accent);
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.focus-item {
+  display: inline-block;
+  background: var(--panel);
+  border: 1px solid var(--accent);
+  padding: 8px 14px;
+  margin: 6px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: var(--accent);
+  transition: 0.2s ease;
+}
+
+.focus-item:hover {
+  background: var(--accent);
+  color: #111;
+  transform: translateY(-2px);
+}
     .skills{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
     .skill{background:var(--panel);border:1px solid var(--line);padding:22px}
     .skill h3{font-size:17px;margin-bottom:8px;color:var(--accent) }.skill p{color:var(--muted);font-size:14px}
@@ -135,19 +158,25 @@
   <div class="container">
     <h2 class="section-title">About Me</h2>
     <p class="section-intro">A practical IT professional who combines technical thinking with design and business understanding.</p>
+   
     <div class="about">
-
-      <div>
-        <p>My background includes technical leadership, web and system development, workflow improvement, landing-page design, and digital production.</p>
-        <p>I enjoy learning new technologies and AI-assisted tools, while keeping the focus on solving real business problems and creating clear user experiences.</p>
-      </div>
-      <div>
-        <p><strong>Core focus</strong></p>
-        <p>Web Development · Responsive Design · Technical Solutions · UX & Process Improvement · Landing Pages · Digital Systems · Creative Technology</p>
-      </div>
-    </div>
+  <div>
+    <h3>My Background</h3>
+    <p>Includes technical leadership, web and system development, workflow improvement, landing-page design, and digital production.</p>
+    <p>I enjoy learning new technologies and AI-assisted tools, while keeping the focus on solving real business problems and creating clear user experiences.</p>
   </div>
-</section>
+
+  <div>
+    <h3>Core Focus</h3>
+    <span class="focus-item">Web Development</span>
+    <span class="focus-item">Responsive Design</span>
+    <span class="focus-item">Technical Solutions</span>
+    <span class="focus-item">UX & Process Improvement</span>
+    <span class="focus-item">Landing Pages</span>
+    <span class="focus-item">Digital Systems</span>
+    <span class="focus-item">Creative Technology</span>
+  </div>
+</div>
 <section id="skills">
   <div class="container">
     <h2 class="section-title">Technical Skills</h2>
